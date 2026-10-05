@@ -7,6 +7,27 @@
 Tools that integrate DNA-seq and RNA-seq data to help interpret mutations
 in a regulatory and splicing context.
 
+> Cotto KC, Feng YY, Ramu A, *et al.* *Integrated analysis of genomic and
+> transcriptomic data for the discovery of splice-associated variants in
+> cancer.* **Nature Communications** 14, 1589 (2023).
+> [doi:10.1038/s41467-023-37266-6](https://doi.org/10.1038/s41467-023-37266-6)
+
+This is Avinash Ramu's copy of
+[griffithlab/regtools](https://github.com/griffithlab/regtools), developed in
+the Griffith Lab at the McDonnell Genome Institute, Washington University in
+St. Louis. Avi was one of RegTools' lead developers and is its top contributor
+by commit count. The upstream repository is the maintained version.
+
+## Why RegTools
+
+Most splicing-variant tools only look at the canonical splice-site
+dinucleotides, or predict splicing effects from sequence alone. RegTools
+instead pairs each somatic variant with the RNA-seq reads from the same tumor
+and reports exon-exon junctions near the variant that look aberrant, such as
+novel donors or acceptors, skipped exons or other unannotated junctions. Applied to
+tumors from many cancer types, this approach found splice-altering variants
+well outside the canonical splice sites.
+
 ## Features
 
 - Identify evidence for aberrant splicing in RNA reads near a list of variants.
@@ -39,7 +60,7 @@ Clone and install regtools by running the following:
 
 Installation should take 1-5 minutes.
 
-For convienience we also maintain a docker image available at [https://hub.docker.com/r/griffithlab/regtools/](https://hub.docker.com/r/griffithlab/regtools/)
+For convenience we also maintain a docker image available at [https://hub.docker.com/r/griffithlab/regtools/](https://hub.docker.com/r/griffithlab/regtools/)
 
 ## Usage:
 
